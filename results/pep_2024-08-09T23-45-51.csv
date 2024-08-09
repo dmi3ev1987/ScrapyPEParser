@@ -1,0 +1,49 @@
+number,name,status
+1,PEP Purpose and Guidelines,Active
+602,Annual Release Cycle for Python,Active
+387,Backwards Compatibility Policy,Active
+20,The Zen of Python,Active
+732,The Python Documentation Editorial Board,Active
+676,PEP Infrastructure Process,Active
+609,Python Packaging Authority (PyPA) Governance,Active
+729,Typing governance process,Active
+101,Doing Python Releases 101,Active
+13,Python Language Governance,Active
+731,C API Working Group Charter,Active
+12,Sample reStructuredText PEP Template,Active
+10,Voting Guidelines,Active
+7,Style Guide for C Code,Active
+11,CPython platform support,Active
+719,Python 3.13 Release Schedule,Active
+8,Style Guide for Python Code,Active
+693,Python 3.12 Release Schedule,Active
+664,Python 3.11 Release Schedule,Active
+672,Unicode-related Security Considerations for Python,Active
+636,Structural Pattern Matching: Tutorial,Final
+630,Isolating Extension Modules,Final
+635,Structural Pattern Matching: Motivation and Rationale,Final
+619,Python 3.10 Release Schedule,Active
+579,Refactoring C functions and methods,Final
+569,Python 3.8 Release Schedule,Active
+607,Reducing CPython’s Feature Delivery Latency,Final
+596,Python 3.9 Release Schedule,Active
+514,Python registration in the Windows registry,Active
+483,The Theory of Type Hints,Final
+482,Literature Overview for Type Hints,Final
+457,Notation For Positional-Only Parameters,Final
+452,API for Cryptographic Hash Functions v2.0,Final
+434,IDLE Enhancement Exception for All Branches,Active
+430,Migrating to Python 3 as the default online documentation,Final
+399,Pure Python/C Accelerator Module Compatibility Requirements,Final
+394,The “python” Command on Unix-Like Systems,Active
+291,Backward Compatibility for the Python 2 Standard Library,Final
+290,Code Migration and Modernization,Active
+333,Python Web Server Gateway Interface v1.0,Final
+249,Python Database API Specification v2.0,Final
+287,reStructuredText Docstring Format,Active
+272,API for Block Encryption Algorithms v1.0,Final
+257,Docstring Conventions,Active
+248,Python Database API Specification v1.0,Final
+247,API for Cryptographic Hash Functions,Final
+4,Deprecation of Standard Modules,Active
+2,Procedure for Adding New Modules,Active
