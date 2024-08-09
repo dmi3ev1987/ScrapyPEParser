@@ -3,9 +3,6 @@ import datetime as dt
 
 FORMAT = '%Y-%m-%d_%H-%M-%S'
 
-# BASE_DIR = Path(__name__).absolute().parent
-# BASE_DIR = Path(__file__).parent
-
 
 class PepParsePipeline:
     def __init__(self):
