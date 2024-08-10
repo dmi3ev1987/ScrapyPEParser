@@ -9,7 +9,7 @@ class PepSpider(scrapy.Spider):
     start_urls = ['https://peps.python.org/']
 
     def parse(self, response):
-        for table_row in response.css('tr.row-odd, tr.row-even')[:50]:
+        for table_row in response.css('tr.row-odd, tr.row-even'):
             abbr = table_row.css('abbr::text').get()
             if abbr:
                 current_pep_url = table_row.css(
