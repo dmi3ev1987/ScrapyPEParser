@@ -1,18 +1,24 @@
 import csv
 import datetime as dt
 
-FORMAT = '%Y-%m-%d_%H-%M-%S'
+from .constants import BASE_DIR, FORMAT
 
 
 class PepParsePipeline:
     def __init__(self):
         self.date = dt.datetime.now().strftime(FORMAT)
-        self.file_name = f'results/status_summary_{self.date}.csv'
-        self.file = open(self.file_name, 'w', newline='')
-        self.writer = csv.writer(self.file)
+        self.file_name = f'status_summary_{self.date}.csv'
+
+        self.results_dir = BASE_DIR / 'results'
+        self.results_dir.mkdir(exist_ok=True)
+
+        self.file_path = self.results_dir / self.file_name
+
         self.status_counts = {}
 
     def open_spider(self, spider):
+        self.file = open(self.file_path, 'w', newline='')
+        self.writer = csv.writer(self.file)
         self.writer.writerow(['Статус', 'Количество'])
 
     def process_item(self, item, spider):
