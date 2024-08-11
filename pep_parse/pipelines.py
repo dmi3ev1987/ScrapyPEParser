@@ -17,7 +17,7 @@ class PepParsePipeline:
         self.status_counts = {}
 
     def open_spider(self, spider):
-        self.file = open(self.file_path, 'w', newline='')
+        self.file = open(self.file_path, 'w', newline='', encoding='utf-8')
         self.writer = csv.writer(self.file)
         self.writer.writerow(['Статус', 'Количество'])
 
@@ -28,7 +28,6 @@ class PepParsePipeline:
 
     def close_spider(self, spider):
         total_count = sum(self.status_counts.values())
-        for status, count in self.status_counts.items():
-            self.writer.writerow([status, count])
+        self.writer.writerows(self.status_counts.items())
         self.writer.writerow(['Total', total_count])
         self.file.close()
